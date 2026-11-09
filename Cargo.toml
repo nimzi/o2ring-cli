@@ -1,0 +1,19 @@
+[package]
+name = "o2ring"
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0-or-later"
+
+[dependencies]
+aes = "0.8"
+anyhow = "1.0.104"
+arrow = { version = "60.1.0", default-features = false }
+bluer = { version = "0.17.4", features = ["bluetoothd"] }
+chrono = "0.4.45"
+clap = { version = "4.6.7", features = ["derive", "env"] }
+futures = "0.3.34"
+parquet = { version = "60.1.0", default-features = false, features = ["arrow", "zstd"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+sha2 = "0.11.1"
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "macros", "time", "signal"] }
